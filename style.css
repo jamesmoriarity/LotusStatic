@@ -1,0 +1,47 @@
+@keyframes bloom      {100% {opacity:0.7;}}
+@keyframes farleft    {100% {transform: rotate(-60deg) scale(1);}}
+@keyframes left       {100% {transform: rotate(-40deg) scale(1);}}
+@keyframes innerleft  {100% {transform: rotate(-20deg) scale(1);}}
+@keyframes middle     {100% {transform: rotate(0deg)  scale(1);}}
+@keyframes innerright {100% {transform: rotate(40deg) scale(1);}}
+@keyframes right      {100% {transform: rotate(20deg) scale(1);}}
+@keyframes farright   {100% {transform: rotate(60deg) scale(1);}}
+@keyframes title      {100% {opacity:1;}}
+
+svg{overflow:visible;}
+#pocket{
+  position:relative;
+  top:250px;
+  left:250px;
+  overflow:visible;
+  width:150px;
+}
+.petal{
+  transform: scale(0.1);
+  opacity:0.2;
+  transform-origin:50% 65%;
+  fill:pink;
+  stroke-width:3px;
+}
+.petal, #titletext{
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+#titletext{
+  opacity:0;
+  font-size:100px;
+  fill:pink;
+  font-family:fantasy;
+  transform: translateY(50px);
+  animation-name: title;
+  animation-delay: 2s;
+}
+#middle{    animation-name: bloom, middle;}
+#left{      animation-name: bloom, left;}
+#farleft{   animation-name: bloom, farleft;}
+#innerleft{ animation-name: bloom, innerleft;}
+#farright{  animation-name: bloom, farright;}
+#innerright{animation-name: bloom, innerright;}
+#right{     animation-name: bloom, right;}
