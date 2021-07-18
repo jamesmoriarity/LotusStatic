@@ -1,4 +1,4 @@
-@keyframes bloom      {100% {opacity:0.7;}}
+@keyframes bloom      {100% {opacity:0.5;}}
 @keyframes farleft    {100% {transform: rotate(-60deg) scale(1);}}
 @keyframes left       {100% {transform: rotate(-40deg) scale(1);}}
 @keyframes innerleft  {100% {transform: rotate(-20deg) scale(1);}}
@@ -7,15 +7,14 @@
 @keyframes right      {100% {transform: rotate(20deg) scale(1);}}
 @keyframes farright   {100% {transform: rotate(60deg) scale(1);}}
 @keyframes title      {100% {opacity:1;}}
-
-svg{overflow:visible;}
 #pocket{
   position:relative;
   top:250px;
   left:250px;
   overflow:visible;
-  width:150px;
+  width:350px;
 }
+.lotus{overflow:visible;}
 .petal{
   transform: scale(0.1);
   opacity:0.2;
