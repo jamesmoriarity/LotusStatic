@@ -7,34 +7,36 @@
 </head>
 <body>
   <div id="pocket">
-    <svg class="lotus" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" viewBox="0 0 512 512">
+    <svg class="lotus" version="1.1" x="0px" y="0px" width="100%" viewBox="0 0 512 512">
       <defs>
-        <path id="basePetal" d="M256,94.349c0,0-67.301,57.307-67.301,128s67.301,128,67.301,128s67.301-57.307,67.301-128S256,94.349,256,94.349z"/>
+        <g id="basePetal" >
+            <path d="m256 94.349s-67.301 57.307-67.301 128 67.301 128 67.301 128 67.301-57.307 67.301-128-67.301-128-67.301-128z"/>
+        </g>
       </defs>
-      <g>
-          <g class="petal" id="middle">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="innerright">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="innerleft">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="right">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="left">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="farleft">
-            <use xlink:href="#basePetal"/>
-          </g>
-          <g class="petal" id="farright">
-            <use xlink:href="#basePetal"/>
-          </g>
+      <g class="petal" id="middle">
+        <use xlink:href="#basePetal"/>
       </g>
-      <text id="titletext">Mana Ohana</text>
+      <g class="petal" id="innerright">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g class="petal" id="innerleft">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g class="petal" id="right">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g class="petal" id="left">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g class="petal" id="farleft">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g class="petal" id="farright">
+        <use xlink:href="#basePetal"/>
+      </g>
+      <g id="titletext">
+        <text>Mana Ohana</text>
+      </g>
     </svg>
   </div>
 </body>
