@@ -1,4 +1,4 @@
-@keyframes bloom      {100% {opacity:0.5;}}
+@keyframes bloom      {100% {opacity:0.5; fill:rgb(236, 130, 144)}}
 @keyframes farleft    {100% {transform: rotate(-60deg) scale(1);}}
 @keyframes left       {100% {transform: rotate(-40deg) scale(1);}}
 @keyframes innerleft  {100% {transform: rotate(-20deg) scale(1);}}
@@ -12,13 +12,13 @@
   top:250px;
   left:250px;
   overflow:visible;
-  width:350px;
+  width:100px;
 }
 .lotus{overflow:visible;}
 .petal{
   transform: scale(0.1);
   opacity:0.2;
-  transform-origin:50% 65%;
+  transform-origin:50px 200px;
   fill:pink;
   stroke-width:3px;
 }
